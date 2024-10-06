@@ -1,5 +1,5 @@
 {
-  "name": "merge-class",
+  "name": "merge-js-class",
   "description": "Node.js class merger",
   "version": "0.0.1",
   "main": "lib/index.js",
