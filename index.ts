@@ -5,7 +5,7 @@
  * @param { boolean } override - will override target object? default is true
  * @Return { string } - merged object
  */
-export default async function merge(to: any, from: any, override: boolean = true) {
+export async function merge(to: any, from: any, override: boolean = true) {
     const keys = Object.keys(to);
     keys.forEach((key) => {
         if (!from[key])
@@ -17,3 +17,5 @@ export default async function merge(to: any, from: any, override: boolean = true
 
     return to;
 }
+
+export default merge;
