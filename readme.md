@@ -7,7 +7,7 @@ Merge JS Class는 js 환경에서 같은 클래스를 쉽게 합치기 위한 �
 -  **이름**: merge-js-class
 -  **저자**: Yeonjun Lee <yeonfish6040@gmail.com>
 -  **라이센스**: ISC
--  **홈페이지**: [GitHub Repository](https://github.com/yeonfish6040/merge-js-class![img.png](img.png)#readme)
+-  **홈페이지**: [GitHub Repository](https://github.com/yeonfish6040/merge-js-class#readme)
 -  **버그 리포트**: [Issues Page](https://github.com/yeonfish6040/merge-js-class/issues)
 
 ## 설치방법
