@@ -1,0 +1,28 @@
+{
+  "name": "merge-class",
+  "description": "Node.js class merger",
+  "version": "0.0.1",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:yeonfish6040/merge-class.git"
+  },
+  "keywords": [
+    "merge",
+    "class",
+    "property"
+  ],
+  "author": "Yeonjun Lee <yeonfish6040@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yeonfish6040/merge-class/issues"
+  },
+  "homepage": "https://github.com/yeonfish6040/merge-class#readme",
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
