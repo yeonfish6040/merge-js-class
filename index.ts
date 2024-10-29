@@ -8,7 +8,7 @@
 export async function merge(to: any, from: any, override: boolean = true) {
     const keys = Object.getOwnPropertyNames(to);
     keys.forEach((key) => {
-        if (to[key] && !override)
+        if (to.hasOwnProperty(key) && !override)
             return;
         return to[key] = from[key];
     });
