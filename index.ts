@@ -6,7 +6,7 @@
  * @Return { string } - merged object
  */
 export async function merge(to: any, from: any, override: boolean = true) {
-    const keys = Object.getOwnPropertyNames(to);
+    const keys = Object.getOwnPropertyNames(from);
     keys.forEach((key) => {
         if (to.hasOwnProperty(key) && !override)
             return;
