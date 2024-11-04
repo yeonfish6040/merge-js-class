@@ -8,7 +8,7 @@
 export function merge(to: any, from: any, override: boolean = true) {
     to = to || {};
     for (var p in from) {
-        if (to.hasOwnProperty(p)) continue;
+        if (to.hasOwnProperty(p) && !override) continue;
         to[p] = from[p];
     }
     return to;
