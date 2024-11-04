@@ -6,14 +6,15 @@
  * @Return { string } - merged object
  */
 export async function merge(to: any, from: any, override: boolean = true) {
-    const keys = Object.getOwnPropertyNames(from);
-    keys.forEach((key) => {
-        if (to.hasOwnProperty(key) && !override)
-            return;
-        return to[key] = from[key];
-    });
-
-    return to;
+    return new Promise((resolve, reject) => {
+        const keys = Object.getOwnPropertyNames(from);
+        keys.forEach((key, i) => {
+            if (to.hasOwnProperty(key) && !override)
+                return;
+            to[key] = from[key];
+            if (i-1 === keys.length) resolve(to);
+        });
+    })
 }
 
 export default merge;
