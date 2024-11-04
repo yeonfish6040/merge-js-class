@@ -5,16 +5,13 @@
  * @param { boolean } override - will override target object? default is true
  * @Return { string } - merged object
  */
-export async function merge<T>(to: any, from: any, override: boolean = true): Promise<T> {
-    return new Promise((resolve, reject) => {
-        const keys = Object.getOwnPropertyNames(from);
-        keys.forEach((key, i) => {
-            if (to.hasOwnProperty(key) && !override)
-                return;
-            to[key] = from[key];
-            if (i-1 === keys.length) resolve(to);
-        });
-    })
+export function merge(to: any, from: any, override: boolean = true) {
+    to = to || {};
+    for (var p in from) {
+        if (to.hasOwnProperty(p)) continue;
+        to[p] = from[p];
+    }
+    return to;
 }
 
 export default merge;
